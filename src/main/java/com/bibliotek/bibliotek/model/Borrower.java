@@ -1,16 +1,16 @@
 package com.bibliotek.bibliotek.model;
 
-public class Låner {
+public class Borrower {
 
 
     long id;
-    String navn;
+    String name;
     String mail;
 
 
-    public Låner(long id, String navn, String mail) {
+    public Borrower(long id, String name, String mail) {
         this.id = id;
-        this.navn = navn;
+        this.name = name;
         this.mail = mail;
     }
 
@@ -22,12 +22,12 @@ public class Låner {
         this.id = id;
     }
 
-    public String getNavn() {
-        return navn;
+    public String getName() {
+        return name;
     }
 
-    public void setNavn(String navn) {
-        this.navn = navn;
+    public void setName(String navn) {
+        this.name = navn;
     }
 
     public String getMail() {
@@ -40,6 +40,6 @@ public class Låner {
 
     @Override
     public String toString() {
-        return "Låner: \n" + "id: " + id + ", navn: " + navn + ", mail: " + mail;
+        return "Borrower: \n" + "id: " + id + ", name: " + name + ", mail: " + mail;
     }
 }
