@@ -26,7 +26,7 @@ public class Loan {
     }
 
     public void addMedia(Media media){
-        bookList.add(media);
+        mediaList.add(media);
     }
 
     public ArrayList<Book> getBookList() {
