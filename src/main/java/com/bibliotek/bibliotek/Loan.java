@@ -1,6 +1,7 @@
 package com.bibliotek.bibliotek;
 
 import com.bibliotek.bibliotek.model.Book;
+import com.bibliotek.bibliotek.model.Borrower;
 import com.bibliotek.bibliotek.model.Media;
 
 import java.time.LocalDate;
@@ -12,12 +13,14 @@ public class Loan {
     private ArrayList<Media> mediaList;
     private LocalDate loanDate;
     private LocalDate deadline;
+    private Borrower borrower;
 
-    public Loan(LocalDate loanDate, LocalDate deadline) {
+    public Loan(LocalDate loanDate, LocalDate deadline, Borrower borrower) {
         this.loanDate = loanDate;
         this.deadline = deadline;
         this.mediaList = new ArrayList<Media>();
         this.bookList = new ArrayList<Book>();
+        this.borrower = borrower;
     }
 
 
