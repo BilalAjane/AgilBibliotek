@@ -13,9 +13,9 @@ public class Loan {
     private LocalDate loanDate;
     private LocalDate deadline;
 
-    public Loan(LocalDate låneDato, LocalDate afleveringsFrist) {
-        this.loanDate = låneDato;
-        this.deadline = afleveringsFrist;
+    public Loan(LocalDate loanDate, LocalDate deadline) {
+        this.loanDate = loanDate;
+        this.deadline = deadline;
         this.mediaList = new ArrayList<Media>();
         this.bookList = new ArrayList<Book>();
     }
