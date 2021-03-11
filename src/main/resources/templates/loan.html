@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Loan</title>
 </head>
 <body>
+
+<h1>Books and media</h1>
+
+<h2>Books</h2>
+<table table-dark table-striped table-bordered>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Isbn</th>
+    </tr>
+
+    <tr th:each="book:${books}">
+        <td th:text="${book.id}">1</td>
+        <td th:text="${book.title}">Test</td>
+        <td th:text="${book.isbn}">12345678</td>
+        <td>
+            <button type="submit">Lån</button>
+        </td>
+    </tr>
+</table>
+
+<h2>Media</h2>
+<table table-dark table-striped table-bordered>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+    </tr>
+
+    <tr th:each="media:${medias}">
+        <td th:text="${media.id}">1</td>
+        <td th:text="${media.title}">Test</td>
+        <td>
+            <button type="submit">Lån</button>
+        </td>
+    </tr>
+</table>
 
 </body>
 </html>
