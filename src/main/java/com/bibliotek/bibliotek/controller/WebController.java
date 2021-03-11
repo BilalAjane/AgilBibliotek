@@ -7,19 +7,15 @@ import org.springframework.web.context.request.WebRequest;
 public class WebController {
 
 
-    @GetMapping("/")
-    public String login() {
-        return "welcome";
-    }
 
     @GetMapping("/createProfile")
     public String createProfile() {
         return "createProfile";
     }
 
-    @GetMapping("/logIn")
+    @GetMapping("/index")
     public String logIn() {
-        return "login";
+        return "index";
     }
 
     @GetMapping("/overview")
@@ -39,7 +35,5 @@ public class WebController {
         //model.addAttribute("userlist", loginController.getUsers("", id, "admin"));
         return "/admin";
     }
-
-
 
 }
