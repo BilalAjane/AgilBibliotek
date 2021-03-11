@@ -1,5 +1,5 @@
 package com.bibliotek.bibliotek.model;
 
-public class Loan{
+public class Media{
 
 }
