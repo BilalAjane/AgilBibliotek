@@ -1,4 +1,4 @@
-package com.bibliotek.bibliotek.Model;
+package com.bibliotek.bibliotek.model;
 
 public class Låner {
 
