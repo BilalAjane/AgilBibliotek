@@ -1,5 +1,8 @@
 package com.bibliotek.bibliotek;
 
+import com.bibliotek.bibliotek.model.Book;
+import com.bibliotek.bibliotek.model.Media;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -18,27 +21,27 @@ public class Loan {
     }
 
 
-    public void addBook(Bog bog){
-        bookList.add(bog);
+    public void addBook(Book book){
+        bookList.add(book);
     }
 
-    public void addMedia(Medie medie){
-        bookList.add(medie);
+    public void addMedia(Media media){
+        bookList.add(media);
     }
 
-    public ArrayList<Bog> getBookList() {
+    public ArrayList<Book> getBookList() {
         return bookList;
     }
 
-    public void setBookList(ArrayList<Bog> bookList) {
+    public void setBookList(ArrayList<Book> bookList) {
         this.bookList = bookList;
     }
 
-    public ArrayList<Medie> getMediaList() {
+    public ArrayList<Media> getMediaList() {
         return mediaList;
     }
 
-    public void setMediaList(ArrayList<Medie> mediaList) {
+    public void setMediaList(ArrayList<Media> mediaList) {
         this.mediaList = mediaList;
     }
 
